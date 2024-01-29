@@ -11,4 +11,4 @@ nginxdir: "{{ '/usr/share/nginx/html' if ansible_distribution == 'CentOS'
 
 pub_ip: "{{ansible_eth0.ipv4.address}}"
 
-pri_ip: "{{ansible_eht1.ipv4.address}}"
+pri_ip: "{{ansible_eth1.ipv4.address}}"
