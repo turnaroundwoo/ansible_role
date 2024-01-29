@@ -1,0 +1,9 @@
+---
+- name: web_page
+  template:
+    src: index.j2
+    dest: "{{ nginxdir }}"
+    mode: 0644
+    backup: yes
+  notify:
+    - restart nginx web server
