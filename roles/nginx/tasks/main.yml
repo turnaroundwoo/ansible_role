@@ -1,0 +1,6 @@
+---
+- name: install_os_version
+  include_tasks: "{{ lnx_name }}.yml"
+
+- name: nginx_setting
+  include_tasks: config.yml
