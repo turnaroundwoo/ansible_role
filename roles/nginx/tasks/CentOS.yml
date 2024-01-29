@@ -1,0 +1,7 @@
+- name: "{{ ansible_distribution }}에 epl-release 설치하기"
+  action: "{{ ansible_pkg_mgr}} name= epl-release state=latest"
+
+- name: "{{ ansible_distribution }}을 위한 nginx 설치"
+  action: "{{ ansible_pkg_mgr}} name=nginx state=present"
+
+

@@ -1,0 +1,2 @@
+- name: "{{ ansible_pkg_mgr }} 을 위한 nginx 설치"
+  action: "{{ ansible_pkg_mgr }} name=nginx state=present update_cache=yes"
